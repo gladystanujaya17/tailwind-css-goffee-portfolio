@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-background font-body">
+
+    <!-- Navbar Start -->
+    <nav class="fixed top-0 left-0 right-0 z-50 flex justify-between items-center bg-black text-white border-b border-secondary-200 shadow-md shadow-secondary-200">
+        <a href="" class="text-4xl p-4 italic"><span class="font-bold text-primary cursor-pointer">GOFFEE</span></a>
+
+        <div id="menu" class="hidden md:inline-block md:text-md lg:text-lg"> 
+            <a href="#" class="m-4 hover:font-bold hover:font-600 transform hover:scale-105 hover:border-b-2 hover:border-primary">Home</a>
+            <a href="#about" class="m-4 hover:font-bold hover:font-600 transform hover:scale-105 hover:border-b-2 hover:border-primary">About</a>
+            <a href="#coffee" class="m-4 hover:font-bold hover:font-600 transform hover:scale-105 hover:border-b-2 hover:border-primary">Coffee</a>
+            <a href="#contact" class="m-4 hover:font-bold hover:font-600 transform hover:scale-105 hover:border-b-2 hover:border-primary">Contact</a>
+        </div>
+
+        <div class="flex justify-between">
+            <a href="" class="m-2"><i data-feather="search"></i></a>
+            <a href="" class="m-2"><i data-feather="shopping-cart"></i></a>
+            <a href="" id="burger" class="md:hidden m-2"><i data-feather="menu"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Section Start -->
+    <section id="home">
+        <div class="flex flex-col gap-10 justify-center items-center text-center ml-8 text-white my-32 md:text-left md:grid md:grid-cols-2">
+            <div class="mx-10 sm:mx-20 items-center justify-center">
+                <img src="image/coffee.png" class="w-full" alt="">
+            </div>
+            <div class="mx-20">
+                <h1 class="mt-5 font-bold text-white-600 text-5xl mb-5">A cup of <span class="animate-pulse font-bold text-primary italic">GOFFEE</span></h1>
+                <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione alias architecto quasi odit dolores libero magnam impedit ea eius molestiae.</p>
+                <div class="flex justify-center items-center md:justify-start text-center text-md lg:text-lg lg:flex-row">
+                    <a href="#" class="mt-10 p-3 px-7 mr-5 bg-primary rounded-md font-bold shadow-md hover:shadow-inner hover:bg-secondary-200 hover:bg-opacity-50 transition ease-out duration-300">Buy Now!</a>
+                    <a href="#" class="mt-10 p-3 px-7 ml-5 border border-primary rounded-md font-bold shadow-md hover:shadow-inner hover:bg-secondary-500 hover:bg-opacity-50 transition ease-out duration-300">GOFFEE Promo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+    <section id="about" class="bg-primary p-2 mb-10">
+        <h2 class="text-white mx-20 mt-20 mb-10 font-bold text-3xl text-center md:text-left">About Us</h2>
+        <div class="flex flex-col gap-5 mb-10 items-center justify-center md:grid md:grid-cols-2">
+            <div>
+                <h2 class="text-white mx-20 mb-5 text-center text-xl md:text-left"><b>What is GOFFEE?</b></h2>
+                <p class="mx-20 text-white mb-20 text-center md:w-auto md:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non odio cumque numquam aut voluptate quae aspernatur dolores adipisci odit hic, ipsam quidem! Eveniet tempore soluta debitis, nostrum aspernatur minus eaque expedita ipsam, culpa deserunt dolores error impedit nobis quisquam! Explicabo hic debitis, mollitia amet adipisci pariatur aliquid. Tempore, possimus quam?</p>
+            </div>
+            <div class="mx-auto items-center justify-center shadow-background shadow-lg">
+                <img src="image/coffee-1.jpg" class="rounded-lg w-80" alt="About GOFFEE">
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Coffee Section Start -->
+    <section id="coffee" class="p-6">
+        <h2 class="text-white mx-10 mt-20 mb-10 font-bold text-3xl text-center md:mx-20 md:text-left">GOFFEE Menu</h2>
+        <!-- DRINKS -->
+        <h3 class="text-white mx-10 mt-20 mb-10 font-bold text-2xl text-center pb-5 border-b border-primary md:mx-20">Coffee Section</h3>
+
+        <div class="mt-8 mx-10 grid lg:grid-cols-3 gap-10 sm:mx-20">
+            <!-- Cards -->
+            <div class="bg-primary rounded-lg card hover:shadow-lg transform hover:scale-105 hover:bg-secondary-200 hover:text-secondary-100 transition ease-in duration-300">
+                <img src="image/latte.jpg" alt="Fried Rice" class="w-full h-32 sm:h-48 p-2 rounded-lg">
+                <div class="m-4">
+                    <div class="flex justify-between items-center md:gap-2">
+                        <div>
+                            <span class="font-bold text-lg">Latte</span>
+                            <span class="block text-sm object-cover">IDR 30.000,00</span>
+                    </div>
+                        <div>
+                            <a href="#" class="mt-10 p-2 px-4 text-sm bg-white border border-background rounded-md font-bold shadow-md hover:shadow-inner hover:bg-background hover:text-white hover:bg-opacity-50 transition ease-out duration-300 sm:text-sm md:text-md">Buy Now!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-primary rounded-lg card hover:shadow-lg transform hover:scale-105 hover:bg-secondary-200 hover:text-secondary-100 transition ease-in duration-300">
+                <img src="image/espresso.jpg" alt="Fried Rice" class="w-full h-32 sm:h-48 p-2 rounded-lg">
+                <div class="m-4">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <span class="font-bold text-lg">Espresso</span>
+                            <span class="block text-sm object-cover">IDR 40.000,00</span>
+                    </div>
+                        <div>
+                            <a href="#" class="mt-10 p-2 px-4 text-sm bg-white border border-background rounded-md font-bold shadow-md hover:shadow-inner hover:bg-background hover:text-white hover:bg-opacity-50 transition ease-out duration-300 sm:text-sm md:text-md">Buy Now!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-primary rounded-lg card hover:shadow-lg transform hover:scale-105 hover:bg-secondary-200 hover:text-secondary-100 transition ease-in duration-300">
+                <img src="image/cappucino.jpg" alt="Fried Rice" class="w-full h-32 sm:h-48 p-2 rounded-lg">
+                <div class="m-4">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <span class="font-bold text-lg">Cappucino</span>
+                            <span class="block text-sm object-cover">IDR 35.000,00</span>
+                    </div>
+                        <div>
+                            <a href="#" class="mt-10 p-2 px-4 text-sm bg-white border border-background rounded-md font-bold shadow-md hover:shadow-inner hover:bg-background hover:text-white hover:bg-opacity-50 transition ease-out duration-300 sm:text-sm md:text-md">Buy Now!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SNACKS -->
+        <h3 class="text-white mx-10 mt-20 mb-10 font-bold text-2xl text-center pb-5 border-b border-primary sm:mx-20">Snacks Section</h3>
+
+        <div class="mt-8 mx-10 grid lg:grid-cols-3 gap-10 sm:mx-20">
+            <div class="bg-primary rounded-lg card hover:shadow-lg transform hover:scale-105 hover:bg-secondary-200 hover:text-secondary-100 transition ease-in duration-300">
+                <img src="image/croissant.jpg" alt="Fried Rice" class="w-full h-32 sm:h-48 p-2 rounded-lg">
+                <div class="m-4">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <span class="font-bold text-lg">Croissant</span>
+                            <span class="block text-sm object-cover">IDR 35.000,00</span>
+                    </div>
+                        <div>
+                            <a href="#" class="mt-10 p-2 px-4 text-sm bg-white border border-background rounded-md font-bold shadow-md hover:shadow-inner hover:bg-background hover:text-white hover:bg-opacity-50 transition ease-out duration-300 sm:text-sm md:text-md">Buy Now!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-primary rounded-lg card hover:shadow-lg transform hover:scale-105 hover:bg-secondary-200 hover:text-secondary-100 transition ease-in duration-300">
+                <img src="image/doughnut.jpg" alt="Fried Rice" class="w-full h-32 sm:h-48 p-2 rounded-lg">
+                <div class="m-4">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <span class="font-bold text-lg">Doughnut</span>
+                            <span class="block text-sm object-cover">IDR 45.000,00</span>
+                    </div>
+                        <div>
+                            <a href="#" class="mt-10 p-2 px-4 text-sm bg-white border border-background rounded-md font-bold shadow-md hover:shadow-inner hover:bg-background hover:text-white hover:bg-opacity-50 transition ease-out duration-300 sm:text-sm md:text-md">Buy Now!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-primary rounded-lg card hover:shadow-lg transform hover:scale-105 hover:bg-secondary-200 hover:text-secondary-100 transition ease-in duration-300">
+                <img src="image/pretzel.jpg" alt="Fried Rice" class="w-full h-32 sm:h-48 p-2 rounded-lg">
+                <div class="m-4">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <span class="font-bold text-lg">Pretzel</span>
+                            <span class="block text-sm object-cover">IDR 50.000,00</span>
+                    </div>
+                        <div>
+                            <a href="#" class="mt-10 p-2 px-4 text-sm bg-white border border-background rounded-md font-bold shadow-md hover:shadow-inner hover:bg-background hover:text-white hover:bg-opacity-50 transition ease-out duration-300 sm:text-sm md:text-md">Buy Now!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-center">
+            <div class="btn my-8 p-3 mb-24 rounded-md bg-secondary-500 shadow-secondary-200 shadow-md text-white hover:bg-secondary-200 hover:shadow-inner transform hover:scale-125 hover:shadow-secondary-500 hover:bg-opacity-50 transition ease-out duration-300">Load more</div>
+        </div>
+
+        <!-- Contact Section Start -->
+        <section id="contact" class="">
+            <p class="text-white text-center font-bold text-3xl">Our Contact</p>
+            <p class="text-white text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, iure.</p>
+
+            <div class="mt-8 my-8 mx-20 bg-primary md:grid md:grid-cols-2">
+                <iframe class="object-cover w-full md:h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63465.83290955355!2d106.83646464999998!3d-6.182312999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f436b8c94b07%3A0x6ea6d5398b7c82f6!2sCentral%20Jakarta%2C%20Central%20Jakarta%20City%2C%20Jakarta!5e0!3m2!1sen!2sid!4v1714575162312!5m2!1sen!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <form action="" class="flex flex-col items-center justify-center py-4">
+                    <div class="flex items-center gap-4 text-center mt-8 border border-solid p-2">
+                      <i data-feather="user"></i>
+                      <input type="text" placeholder="Name" class="w-full p-1 bg-transparent placeholder-white">  
+                    </div>
+                    <div class="flex items-center gap-4 text-center mt-8 border border-solid p-2">
+                      <i data-feather="mail"></i>
+                      <input type="text" placeholder="E-mail" class="w-full p-1 bg-transparent placeholder-white">  
+                    </div>
+                    <div class="flex items-center gap-4 text-center mt-8 border border-solid p-2">
+                      <i data-feather="phone"></i>
+                      <input type="text" placeholder="Telephone" class="w-full p-1 bg-transparent placeholder-white">  
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <button type="submit" class="my-12 px-5 py-2  border border-background bg-secondary-500 rounded-md hover:bg-background hover:text-white hover:border-white hover:shadow-inner transform hover:scale-110 hover:shadow-secondary-500 hover:bg-opacity-50 transition ease-out duration-300">Send Message</button>
+                    </div>
+                </form>
+            </div>
+            
+        </section>
+    </section>
+    <!-- Coffee Section End -->
+
+    <!-- Footer Start -->
+    <footer class="bg-black text-white text-center mt-12 py-6">
+        <!-- Social Media -->
+        <div class="py-4 flex flex-row justify-center gap-8">
+            <a href="https://instagram.com/"><i data-feather="instagram" class="hover:text-primary"></i></a>
+            <a href="https://twitter.com/"><i data-feather="twitter" class="hover:text-primary"></i></a>
+            <a href="https://www.facebook.com/"><i data-feather="facebook" class="hover:text-primary"></i></a>
+        </div>
+
+        <!-- Links -->
+        <div class="flex justify-center gap-8 py-4">
+            <a href="#home" class="hover:text-primary">Home</a>
+            <a href="#about" class="hover:text-primary">About</a>
+            <a href="#coffee" class="hover:text-primary">Coffee</a>
+            <a href="#contact" class="hover:text-primary">Contact</a>
+        </div>
+
+        <!-- Credit -->
+        <div>
+            <p>Created by <a href="https://github.com/gladystanujaya17" class="hover:text-primary">gladystanujaya</a>. | &copy; 2024. </p>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Feather Icons -->
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
