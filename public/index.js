@@ -1,11 +1,20 @@
-const burger = document.getElementById('burger');
-const menu = document.getElementById('menu');
+// Bagian Navbar Fixed
+window.onscroll = function() {
+    const header = document.querySelector('header');
+    const fixedNav = header.offsetTop;
 
-burger.addEventListener('click', function() {
-    if (menu.classList.contains('hidden')) {
-        menu.classList.remove('hidden');
+    if(window.pageYOffset > fixedNav) {
+        header.classList.add('navbar-fixed');   
     } else {
-        menu.classList.add('hidden');
+        header.classList.remove('navbar-fixed');   
     }
-});
+}
 
+// Bagian hamburger
+const hamburger = document.querySelector('#hamburger');
+const navMenu = document.querySelector('#nav-menu');
+
+hamburger.addEventListener('click', function() {
+    hamburger.classList.toggle('hamburger-active');
+    navMenu.classList.toggle('hidden');
+});

@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="index.js"></script>
 
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
@@ -13,22 +12,40 @@
 <body class="bg-background font-body">
 
     <!-- Navbar Start -->
-    <nav class="fixed top-0 left-0 right-0 z-50 flex justify-between items-center bg-black text-white border-b border-secondary-200 shadow-md shadow-secondary-200">
-        <a href="" class="text-4xl p-4 italic"><span class="font-bold text-primary cursor-pointer">GOFFEE</span></a>
+    <header class="bg-black absolute top-0 left-0 w-full flex items-center z-50 p-4 border-b border-secondary-200 shadow-md shadow-secondary-200">
+        <div class="container">
+            <div class="flex items-cnter justify-between relative">
+                <div class="px-4">
+                    <span class="text-4xl font-bold text-primary cursor-pointer italic lg:text-6xl">GOFFEE</span>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" class="text-white block absolute right-4 lg:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
 
-        <div id="menu" class="hidden md:inline-block md:text-md lg:text-lg"> 
-            <a href="#" class="m-4 hover:font-bold hover:font-600 transform hover:scale-105 hover:border-b-2 hover:border-primary">Home</a>
-            <a href="#about" class="m-4 hover:font-bold hover:font-600 transform hover:scale-105 hover:border-b-2 hover:border-primary">About</a>
-            <a href="#coffee" class="m-4 hover:font-bold hover:font-600 transform hover:scale-105 hover:border-b-2 hover:border-primary">Coffee</a>
-            <a href="#contact" class="m-4 hover:font-bold hover:font-600 transform hover:scale-105 hover:border-b-2 hover:border-primary">Contact</a>
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-secondary-500 shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full text-white lg:block lg:static lg:bg-transparent lg:max-w-full
+                    lg:shadow-none lg:rounded-none">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#home" class="text-base text-white py-2 mx-8 flex group-hover:text-primary group-hover:font-bold lg:text-xl lg:py-0">Home</a>
+                            </li>
+                            <li class="group">
+                                <a href="#about" class="text-base text-white py-2 mx-8 flex group-hover:text-primary group-hover:font-bold lg:text-xl lg:py-0">About</a>
+                            </li>
+                            <li class="group">
+                                <a href="#coffee" class="text-base text-white py-2 mx-8 flex group-hover:text-primary group-hover:font-bold lg:text-xl lg:py-0">Coffee</a>
+                            </li>
+                            <li class="group">
+                                <a href="#contact" class="text-base text-white py-2 mx-8 flex group-hover:text-primary group-hover:font-bold lg:text-xl lg:py-0">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
-
-        <div class="flex justify-between">
-            <a href="" class="m-2"><i data-feather="search"></i></a>
-            <a href="" class="m-2"><i data-feather="shopping-cart"></i></a>
-            <a href="" id="burger" class="md:hidden m-2"><i data-feather="menu"></i></a>
-        </div>
-    </nav>
+    </header>
     <!-- Navbar End -->
 
     <!-- Hero Section Start -->
@@ -177,21 +194,21 @@
             <p class="text-white text-center font-bold text-3xl">Our Contact</p>
             <p class="text-white text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, iure.</p>
 
-            <div class="mt-8 my-8 mx-20 bg-primary md:grid md:grid-cols-2">
+            <div class="mt-8 my-8 mx-10 sm:mx-20 bg-primary md:grid md:grid-cols-2">
                 <iframe class="object-cover w-full md:h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63465.83290955355!2d106.83646464999998!3d-6.182312999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f436b8c94b07%3A0x6ea6d5398b7c82f6!2sCentral%20Jakarta%2C%20Central%20Jakarta%20City%2C%20Jakarta!5e0!3m2!1sen!2sid!4v1714575162312!5m2!1sen!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-                <form action="" class="flex flex-col items-center justify-center py-4">
+                <form action="" class="flex flex-col items-center justify-center py-4 px-4 sm:px-0">
                     <div class="flex items-center gap-4 text-center mt-8 border border-solid p-2">
                       <i data-feather="user"></i>
-                      <input type="text" placeholder="Name" class="w-full p-1 bg-transparent placeholder-white">  
+                      <input type="text" placeholder="Name" class="text-sm w-full p-1 bg-transparent placeholder-white  md:text-md">  
                     </div>
                     <div class="flex items-center gap-4 text-center mt-8 border border-solid p-2">
                       <i data-feather="mail"></i>
-                      <input type="text" placeholder="E-mail" class="w-full p-1 bg-transparent placeholder-white">  
+                      <input type="text" placeholder="E-mail" class="text-sm w-full p-1 bg-transparent placeholder-white md:text-md ">  
                     </div>
                     <div class="flex items-center gap-4 text-center mt-8 border border-solid p-2">
                       <i data-feather="phone"></i>
-                      <input type="text" placeholder="Telephone" class="w-full p-1 bg-transparent placeholder-white">  
+                      <input type="text" placeholder="Telephone" class="text-sm w-full p-1 bg-transparent placeholder-white md:text-md">  
                     </div>
                     <div class="flex items-center justify-center">
                         <button type="submit" class="my-12 px-5 py-2  border border-background bg-secondary-500 rounded-md hover:bg-background hover:text-white hover:border-white hover:shadow-inner transform hover:scale-110 hover:shadow-secondary-500 hover:bg-opacity-50 transition ease-out duration-300">Send Message</button>
@@ -231,5 +248,9 @@
     <script>
         feather.replace();
     </script>
+
+    <!-- JavaScript -->
+    <script src="index.js"></script>
+
 </body>
 </html>
